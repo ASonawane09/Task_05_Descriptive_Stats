@@ -57,7 +57,7 @@ The dataset includes stats for 13 players over 32 games with features such as po
 
 ## Contact
 
-For questions or feedback, please contact: [Your Name] - [your.email@example.com]
+For questions or feedback, please contact: Aakanksha Sonawane - assonawa@syr.edu
 
 ---
 
