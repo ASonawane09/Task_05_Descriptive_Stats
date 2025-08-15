@@ -1,7 +1,4 @@
----
-title: "Task_05_Descriptive_Stats"
-output: github_document
----
+# Task_05_Descriptive_Stats
 
 ## Overview
 This project investigates the capabilities of Large Language Models (LLMs) in analyzing sports statistics through natural language queries. Using the Syracuse Men’s Basketball 2023–24 season dataset, the study evaluates how accurately an LLM can answer both **descriptive** (Phase 1) and **advanced reasoning** (Phase 2) questions about player and team performance.
@@ -18,28 +15,28 @@ The dataset contains statistics for **13 players** over **32 games**, including:
 ## Methodology
 
 ### Phase 1 – Descriptive Analysis
-1. **Data Preparation**  
-   - Cleaned and structured the dataset for easy querying.  
-   - Handled missing values and ensured column naming consistency.  
+**Data Preparation**
+- Cleaned and structured the dataset for easy querying.  
+- Handled missing values and ensured column naming consistency.  
 
-2. **Question Design**  
-   - Developed **15 natural language questions** from basic counts to moderately complex queries.  
+**Question Design**
+- Developed **15 natural language questions** from basic counts to moderately complex queries.  
 
-3. **LLM Interaction**  
-   - Provided dataset context to an LLM and recorded responses for each question.  
+**LLM Interaction**
+- Provided dataset context to an LLM and recorded responses for each question.  
 
-4. **Validation**  
-   - Wrote Python scripts to validate LLM answers via direct calculations on the dataset.  
+**Validation**
+- Wrote Python scripts to validate LLM answers via direct calculations on the dataset.  
 
-5. **Visualization**  
-   - Created bar charts, scatter plots, and composite metrics to visualize results.  
+**Visualization**
+- Created bar charts, scatter plots, and composite metrics to visualize results.  
 
 ---
 
 ### Phase 2 – Advanced Reasoning
 This phase moved beyond surface-level stats into **multi-step reasoning** where the LLM had to connect multiple data points, aggregate information, and justify conclusions.
 
-**Types of Questions Asked:**
+**Types of Questions Asked**
 - **Composite Metrics Analysis** – e.g., “Which player had the highest combined efficiency when considering points, rebounds, assists, and shooting percentage?”  
   - Required the LLM to normalize different metrics and combine them into a weighted score.
 - **Contextual Performance** – e.g., “Who contributed the most in games where the team scored under 70 points?”  
@@ -49,7 +46,7 @@ This phase moved beyond surface-level stats into **multi-step reasoning** where 
 - **Impact on Win/Loss** – e.g., “Which stat was most strongly associated with winning games?”  
   - Required correlation reasoning between game outcomes and multiple performance metrics.
 
-**Evaluation Approach:**
+**Evaluation Approach**
 1. **Prompt Design for Reasoning**  
    - Each question was framed to force step-by-step logical reasoning.  
    - Prompts encouraged the model to explain *how* it arrived at the answer.
@@ -60,7 +57,7 @@ This phase moved beyond surface-level stats into **multi-step reasoning** where 
 4. **Error Categorization**  
    - Wrong answers were classified into “computation errors”, “filtering mistakes”, or “misinterpretation of question intent”.
 
-**Findings:**
+**Findings**
 - LLMs performed **well** when the reasoning path was short and metrics were straightforward.  
 - Performance dropped when:
   - Multiple filters were applied before calculation.
@@ -73,12 +70,11 @@ This phase moved beyond surface-level stats into **multi-step reasoning** where 
 - **Points by Player** – Total points scored by each player.  
 - **Rebounds by Player** – Total rebounds for each player.  
 - **Field Goal % vs. Points** – Scoring efficiency vs. total points.  
-- **Defensive Contributions** – Combined blocks and steals.
+- **Defensive Contributions** – Combined blocks and steals.  
 
 ---
 
 ## Usage
 Run the validation script:  
-
 ```bash
 python validate_llm_answers.py
