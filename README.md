@@ -37,7 +37,7 @@ The dataset contains statistics for 13 players over 32 games, including:
 
 ---
 
-### Phase 2 – Advanced Reasoning (No Code)
+### Phase 2 – Advanced Reasoning 
 This phase moved beyond surface-level stats into multi-step reasoning, requiring the LLM to connect multiple data points, aggregate information, and justify conclusions.
 
 **Types of Questions Asked**
